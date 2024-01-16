@@ -1,6 +1,11 @@
 import { Coffee, Package, ShoppingCart, Timer } from '@phosphor-icons/react'
 import { Header } from '../../components/Header'
-import { Container, Wrapper } from './styles'
+import {
+  Container,
+  SmallCardsInWrapper,
+  Wrapper,
+  WrapperContentText,
+} from './styles'
 
 import imgCoffee from '../../assets/wrapper-coffee.png'
 
@@ -17,25 +22,27 @@ export function Home() {
               qualquer hora
             </p>
 
-            <div>
-              <ShoppingCart size={32} />
-              <div>Compra simples e segura</div>
-            </div>
+            <WrapperContentText>
+              <SmallCardsInWrapper variant="green">
+                <ShoppingCart size={32} weight="fill" />
+                <p>Compra simples e segura</p>
+              </SmallCardsInWrapper>
 
-            <div>
-              <Package size={32} />
-              <div>Embalagem mantém o café intacto</div>
-            </div>
+              <SmallCardsInWrapper variant="gray">
+                <Package size={32} weight="fill" />
+                <p>Embalagem mantém o café intacto</p>
+              </SmallCardsInWrapper>
 
-            <div>
-              <Timer size={32} />
-              <div>Entrega rápida e rastreada</div>
-            </div>
+              <SmallCardsInWrapper variant="lowgreen">
+                <Timer size={32} weight="fill" />
+                <p>Entrega rápida e rastreada</p>
+              </SmallCardsInWrapper>
 
-            <div>
-              <Coffee size={32} />
-              <div>O café chega fresquinho até você</div>
-            </div>
+              <SmallCardsInWrapper variant="orange">
+                <Coffee size={32} weight="fill" />
+                <p>O café chega fresquinho até você</p>
+              </SmallCardsInWrapper>
+            </WrapperContentText>
           </div>
         </Wrapper>
 
