@@ -1,8 +1,8 @@
 import { NavLink } from 'react-router-dom'
 
 import logo from '../../assets/logo.svg'
-import { ShoppingCart } from '@phosphor-icons/react'
-import { HeaderContainer } from './styles'
+import { MapPin, ShoppingCartSimple } from '@phosphor-icons/react'
+import { ButtonHeader, HeaderContainer } from './styles'
 
 export function Header() {
   return (
@@ -13,8 +13,14 @@ export function Header() {
         </NavLink>
 
         <div>
-          <div>Goianésia do Pará - PA</div>
-          <ShoppingCart size={32} />
+          <ButtonHeader>
+            <MapPin size={32} weight="fill" />
+            <p>Goianésia do Pará, PA</p>
+          </ButtonHeader>
+
+          <ButtonHeader>
+            <ShoppingCartSimple size={32} weight="fill" />
+          </ButtonHeader>
         </div>
       </nav>
     </HeaderContainer>
