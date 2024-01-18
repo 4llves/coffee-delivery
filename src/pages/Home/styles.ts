@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 import imgBackground from '../../assets/svg-background.svg'
 
-export const Container = styled.main`
+export const Wrapper = styled.main`
   width: 100vw;
   display: flex;
   align-items: center;
@@ -16,7 +16,7 @@ export const Container = styled.main`
   }
 `
 
-export const Wrapper = styled.div`
+export const ContentWrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
@@ -93,5 +93,30 @@ export const SmallCardsInWrapper = styled.div<colorBackgroundIcon>`
           return '#FFF'
       }
     }};
+  }
+`
+export const ContentCard = styled.div`
+  display: flex;
+  width: 100vw;
+  align-items: center;
+  justify-content: center;
+  margin-inline: auto;
+`
+
+export const CoffeeCard = styled.div`
+  display: flex;
+  flex-direction: column;
+
+  width: 16rem;
+  height: 19.375rem;
+  flex-shrink: 0;
+
+  border-radius: 0.375rem 2.25rem;
+  background: ${(props) => props.theme.COLORS.CARD};
+
+  img {
+    width: 7.5rem;
+    height: 7.5rem;
+    margin: -1.25rem auto 1px;
   }
 `
