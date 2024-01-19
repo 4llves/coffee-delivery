@@ -1,13 +1,5 @@
-import {
-  Coffee,
-  Package,
-  ShoppingCart,
-  ShoppingCartSimple,
-  Timer,
-} from '@phosphor-icons/react'
 import { Header } from '../../components/Header'
 import {
-  CoffeeCard,
   ContentCard,
   ContentWrapper,
   SmallCardsInWrapper,
@@ -15,8 +7,9 @@ import {
   WrapperContentText,
 } from './styles'
 
-import imgCoffeeMilk from '../../assets/cafe-com-leite.png'
+import { Coffee, Package, ShoppingCart, Timer } from '@phosphor-icons/react'
 import imgCoffee from '../../assets/wrapper-coffee.png'
+import { Card } from '../../components/Card'
 
 export function Home() {
   return (
@@ -58,26 +51,15 @@ export function Home() {
       </Wrapper>
 
       <ContentCard>
-        <CoffeeCard>
-          <img src={imgCoffeeMilk} alt="" />
-
-          <div className="type-coffee">
-            <span data-content="tradicional">tradicional</span>
-            <span data-content="com leite">com leite</span>
-          </div>
-
-          <h2>Café com Leite</h2>
-
-          <p>Meio a meio de expresso tradicional com leite vaporizado</p>
-
-          <div className="card-footer">
-            <span>R$ 9,90</span>
-
-            <strong>- 00 +</strong>
-
-            <ShoppingCartSimple size={38} weight="fill" />
-          </div>
-        </CoffeeCard>
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
       </ContentCard>
     </div>
   )
