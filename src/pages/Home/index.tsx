@@ -61,20 +61,22 @@ export function Home() {
         <CoffeeCard>
           <img src={imgCoffeeMilk} alt="" />
 
-          <div>
-            <span>tradicional</span>
-            <span>com leite</span>
+          <div className="type-coffee">
+            <span data-content="tradicional">tradicional</span>
+            <span data-content="com leite">com leite</span>
           </div>
 
           <h2>Café com Leite</h2>
 
           <p>Meio a meio de expresso tradicional com leite vaporizado</p>
 
-          <p>R$ 9,90</p>
+          <div className="card-footer">
+            <span>R$ 9,90</span>
 
-          <input type="number" name="" id="" />
+            <strong>- 00 +</strong>
 
-          <ShoppingCartSimple size={32} weight="fill" />
+            <ShoppingCartSimple size={38} weight="fill" />
+          </div>
         </CoffeeCard>
       </ContentCard>
     </div>

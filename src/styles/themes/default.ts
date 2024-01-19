@@ -33,8 +33,9 @@ export const defaultTheme = {
     BACKGROUND: '#272221',
     BACKGROUND_HEADER: '#403937',
     CARD: '#574F4D',
-    GREEN: '#327555',
-    LOW_GREEN: '#9CC8A0',
+    GREEN_800: '#327555',
+    GREEN_200: '#9CC8A0',
+    GREEN_100: '#DBEBDA',
 
     HOVER: '#F3F2F2',
     DEFAULT: '#FAFAFA',
