@@ -2,6 +2,8 @@ import { Header } from '../../components/Header'
 import {
   ContentCard,
   ContentWrapper,
+  Footer,
+  SeparatorText,
   SmallCardsInWrapper,
   Wrapper,
   WrapperContentText,
@@ -50,6 +52,10 @@ export function Home() {
         <img src={imgCoffee} alt="" />
       </Wrapper>
 
+      <SeparatorText>
+        <h1>Nossos Cafés</h1>
+      </SeparatorText>
+
       <ContentCard>
         <Card />
         <Card />
@@ -61,6 +67,16 @@ export function Home() {
         <Card />
         <Card />
       </ContentCard>
+
+      <Footer>
+        <p>
+          Feito por{' '}
+          <a href="https://4llves.dev/" target="_blank" rel="noreferrer">
+            {' '}
+            4llves.dev
+          </a>
+        </p>
+      </Footer>
     </div>
   )
 }

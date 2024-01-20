@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import imgBackground from '../../assets/svg-background.svg'
 
 export const Wrapper = styled.main`
-  width: 100vw;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -96,11 +96,42 @@ export const SmallCardsInWrapper = styled.div<colorBackgroundIcon>`
   }
 `
 export const ContentCard = styled.div`
-  width: 1024px;
+  width: 1120px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 48px;
+  gap: 32px;
   align-items: center;
   justify-content: center;
   margin-inline: auto;
+`
+
+export const SeparatorText = styled.div`
+  width: 1120px;
+  margin: 2rem auto 3.38rem auto;
+
+  h1 {
+    color: ${(props) => props.theme.COLORS.TEXT};
+    font-family: ${(props) => props.theme.FONT.TITLE};
+    font-size: 2rem;
+    font-weight: 800;
+    line-height: 130%; /* 2.6rem */
+  }
+`
+
+export const Footer = styled.footer`
+  display: flex;
+  width: 1120px;
+  height: 64px;
+  align-items: center;
+  justify-content: center;
+  margin-inline: auto;
+
+  p {
+    color: ${(props) => props.theme.COLORS.TITLE};
+
+    a {
+      text-decoration: underline;
+      color: ${(props) => props.theme.COLORS.COFFEE_300};
+    }
+  }
 `
