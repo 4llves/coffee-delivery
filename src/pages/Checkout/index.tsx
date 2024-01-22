@@ -7,6 +7,7 @@ import {
   Trash,
 } from '@phosphor-icons/react'
 import { Header } from '../../components/Header'
+import { Input } from '../../components/Input'
 import { Stepper } from '../../components/Stepper'
 import { CartItens, Container, DataClient } from './styles'
 
@@ -19,22 +20,21 @@ export function Checkout() {
         <DataClient>
           <div className="address">
             <div className="header-address">
-              <MapPinLine size={32} />
-              <h2>Endereço de Entrega</h2>
-              <p>Informe o endereço onde deseja receber seu pedido</p>
+              <MapPinLine />
+              <div className="text">
+                <h2>Endereço de Entrega</h2>
+                <p>Informe o endereço onde deseja receber seu pedido</p>
+              </div>
             </div>
 
             <div className="data-client">
-              <input type="text" placeholder="CEP" />
-              <input type="text" placeholder="Rua" />
-              <input type="text" placeholder="Número" />
-              <input
-                type="text"
-                placeholder="Complemento...............Opcional"
-              />
-              <input type="text" placeholder="Bairro" />
-              <input type="text" placeholder="Cidade" />
-              <input type="text" placeholder="UF" />
+              <Input placeholder="Nome" />
+              <Input placeholder="Rua" />
+              <Input placeholder="Número" />
+              <Input placeholder="Complemento (opcional)" />
+              <Input placeholder="Bairro" />
+              <Input placeholder="Cidade" />
+              <Input placeholder="UF" />
             </div>
           </div>
 
