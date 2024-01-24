@@ -27,14 +27,18 @@ export function Checkout() {
               </div>
             </div>
 
-            <div className="data-client">
-              <Input placeholder="Nome" />
-              <Input placeholder="Rua" />
-              <Input placeholder="Número" />
-              <Input placeholder="Complemento (opcional)" />
-              <Input placeholder="Bairro" />
-              <Input placeholder="Cidade" />
-              <Input placeholder="UF" />
+            <div className="grid data-client">
+              <Input className="intpu cep" placeholder="Cep" />
+              <Input className="intpu name" placeholder="Nome" />
+              <Input className="intpu street" placeholder="Rua" />
+              <Input className="intpu number" placeholder="Número" />
+              <Input
+                className="intpu complement"
+                placeholder="Complemento (opcional)"
+              />
+              <Input className="intpu neighborhood" placeholder="Bairro" />
+              <Input className="intpu city" placeholder="Cidade" />
+              <Input className="intpu uf" placeholder="UF" />
             </div>
           </div>
 

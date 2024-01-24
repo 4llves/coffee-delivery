@@ -37,6 +37,46 @@ export const DataClient = styled.section`
     }
   }
 
+  .grid {
+    display: grid;
+  }
+
+  .cep {
+    grid-area: cep;
+  }
+
+  .name {
+    grid-area: name;
+  }
+
+  .street {
+    grid-area: street;
+  }
+
+  .complement {
+    grid-area: complement;
+  }
+
+  .neighborhood {
+    grid-area: neighborhood;
+  }
+
+  .city {
+    grid-area: city;
+  }
+
+  .uf {
+    grid-area: uf;
+  }
+
+  .data-client {
+    grid-template-areas:
+      'cep nan nan'
+      'street street street'
+      'number complement complement'
+      'neighborhood city uf';
+  }
+
   .address,
   .payment {
     padding: 2.5rem;
