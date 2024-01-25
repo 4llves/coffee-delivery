@@ -3,11 +3,12 @@ import { Container } from './styles'
 
 interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
   Icon?: React.ComponentType
+  className?: string
 }
 
-export function Input({ Icon, ...rest }: InputProps) {
+export function Input({ Icon, className, ...rest }: InputProps) {
   return (
-    <Container>
+    <Container className={className}>
       {Icon && <Icon />}
       <input {...rest} />
     </Container>

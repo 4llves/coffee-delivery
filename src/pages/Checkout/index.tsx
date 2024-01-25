@@ -19,7 +19,7 @@ export function Checkout() {
       <Container>
         <DataClient>
           <div className="address">
-            <div className="header-address">
+            <div className="header-text">
               <MapPinLine />
               <div className="text">
                 <h2>Endereço de Entrega</h2>
@@ -27,40 +27,39 @@ export function Checkout() {
               </div>
             </div>
 
-            <div className="grid data-client">
-              <Input className="intpu cep" placeholder="Cep" />
-              <Input className="intpu name" placeholder="Nome" />
-              <Input className="intpu street" placeholder="Rua" />
-              <Input className="intpu number" placeholder="Número" />
-              <Input
-                className="intpu complement"
-                placeholder="Complemento (opcional)"
-              />
-              <Input className="intpu neighborhood" placeholder="Bairro" />
-              <Input className="intpu city" placeholder="Cidade" />
-              <Input className="intpu uf" placeholder="UF" />
+            <div className="data-client">
+              <Input className="cep" placeholder="Cep" />
+              <Input className="street" placeholder="Rua" />
+              <Input className="number" placeholder="Número" />
+              <Input className="complement" placeholder="Complemento" />
+              <Input className="neighborhood" placeholder="Bairro" />
+              <Input className="city" placeholder="Cidade" />
+              <Input className="uf" placeholder="UF" />
             </div>
           </div>
 
           <div className="payment">
-            <div>
-              <CurrencyDollar size={32} />
-              <h2>Pagamento</h2>
-              <p>
-                O pagamento é feito na entrega. Escolha a forma que deseja pagar
-              </p>
+            <div className="header-text">
+              <CurrencyDollar />
+              <div className="text">
+                <h2>Pagamento</h2>
+                <p>
+                  O pagamento é feito na entrega. Escolha a forma que deseja
+                  pagar
+                </p>
+              </div>
             </div>
 
-            <div>
+            <div className="buttons">
               <button>
-                <CreditCard size={32} />
+                <CreditCard />
                 CARTÃO DE CRÉDITO
               </button>
               <button>
-                <Bank size={32} /> CARTÃO DE DÉBITO
+                <Bank /> CARTÃO DE DÉBITO
               </button>
               <button>
-                <Money size={32} /> DINHEIRO
+                <Money /> DINHEIRO
               </button>
             </div>
           </div>
