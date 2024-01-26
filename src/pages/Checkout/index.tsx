@@ -103,10 +103,12 @@ export function Checkout() {
                 <p>Total de Itens: </p>
                 <strong>R$ 29,70</strong>
               </div>
+
               <div>
                 <p>Entrega: </p>
                 <strong>R$ 3,50</strong>
               </div>
+
               <div className="total">
                 <h2>Total: </h2>
                 <strong>R$ 33,20</strong>
