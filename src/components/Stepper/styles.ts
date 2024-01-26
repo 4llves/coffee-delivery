@@ -10,7 +10,7 @@ export const StepperContainer = styled.div`
   justify-content: space-between;
 
   p {
-    color: ${(props) => props.theme.COLORS.BACKGROUND};
+    color: ${(props) => props.theme.COLORS.CARD};
     text-align: center;
     font-size: 1rem;
     font-weight: 400;

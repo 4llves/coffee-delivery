@@ -9,7 +9,7 @@ import {
 import { Header } from '../../components/Header'
 import { Input } from '../../components/Input'
 import { Stepper } from '../../components/Stepper'
-import { CartItens, Container, DataClient } from './styles'
+import { CartItens, Container, DataClient, Separator } from './styles'
 
 import imgCoffee from '../../assets/cafe-com-leite.png'
 
@@ -78,8 +78,10 @@ export function Checkout() {
                 </button>
                 <h2 className="item">Expresso Tradicional</h2>
               </div>
-              <p>R$ 9,90</p>
+              <strong>R$ 9,90</strong>
             </div>
+
+            <Separator />
 
             <div className="qt-pedidos">
               <img src={imgCoffee} alt="" />
@@ -90,14 +92,28 @@ export function Checkout() {
                 </button>
                 <h2 className="item">Expresso Tradicional</h2>
               </div>
-              <p>R$ 9,90</p>
+
+              <strong>R$ 9,90</strong>
             </div>
 
-            <p>Total de Itens: R$29,70</p>
-            <p>Entrega: R$ 3,50</p>
-            <strong>Total: R$ 33,20</strong>
+            <Separator />
 
-            <button>CONFIRMAR PEDIDO</button>
+            <div className="footer-cart">
+              <div>
+                <p>Total de Itens: </p>
+                <strong>R$ 29,70</strong>
+              </div>
+              <div>
+                <p>Entrega: </p>
+                <strong>R$ 3,50</strong>
+              </div>
+              <div className="total">
+                <h2>Total: </h2>
+                <strong>R$ 33,20</strong>
+              </div>
+
+              <button>CONFIRMAR PEDIDO</button>
+            </div>
           </div>
         </CartItens>
       </Container>

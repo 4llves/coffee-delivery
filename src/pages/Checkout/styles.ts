@@ -125,9 +125,9 @@ export const CartItens = styled.section`
 
   .qt-pedidos {
     display: flex;
+    width: 23rem;
     flex-direction: row;
     align-items: flex-start;
-    justify-content: space-between;
     padding: 0.5rem 0.25rem;
     align-self: stretch;
 
@@ -157,6 +157,14 @@ export const CartItens = styled.section`
       }
     }
 
+    strong {
+      color: ${(props) => props.theme.COLORS.DEFAULT};
+      font-size: 1rem;
+      font-weight: 700;
+      line-height: 130%; /* 1.3rem */
+      margin-left: 3.8rem;
+    }
+
     img {
       width: 4rem;
       height: 4rem;
@@ -165,7 +173,7 @@ export const CartItens = styled.section`
     button[type='submit'] {
       display: flex;
       height: 2rem;
-      width: 5rem;
+      width: 5.68rem;
       padding: 0rem 0.5rem;
       justify-content: center;
       align-items: center;
@@ -176,16 +184,67 @@ export const CartItens = styled.section`
 
       color: ${(props) => props.theme.COLORS.CARD};
       font-family: Roboto;
-      font-size: 0.75rem;
+      font-size: 0.7rem;
       font-style: normal;
       font-weight: 400;
       line-height: 160%; /* 1.2rem */
       text-transform: uppercase;
 
-      :nth-child(1) {
+      svg {
         width: 1rem;
         color: ${(props) => props.theme.COLORS.COFFEE_300};
       }
     }
   }
+
+  .footer-cart {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+
+    .total {
+      color: ${(props) => props.theme.COLORS.TEXT};
+      font-size: 1.25rem;
+      font-weight: 700;
+      line-height: 130%; /* 1.625rem */
+    }
+
+    div {
+      display: inherit;
+      align-items: center;
+      justify-content: space-between;
+
+      p {
+        color: ${(props) => props.theme.COLORS.TEXT};
+        font-size: 0.875rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 130%; /* 1.1375rem */
+      }
+    }
+
+    button {
+      display: flex;
+      padding: 0.75rem 0.5rem;
+      justify-content: center;
+      align-items: center;
+      gap: 0.25rem;
+      align-self: stretch;
+      border-radius: 0.375rem;
+      background: ${(props) => props.theme.COLORS.COFFEE_300};
+      border: none;
+
+      color: ${(props) => props.theme.COLORS.TITLE};
+      font-size: 0.875rem;
+      font-weight: 700;
+      line-height: 160%; /* 1.4rem */
+      text-transform: uppercase;
+    }
+  }
+`
+export const Separator = styled.div`
+  width: 100%;
+  height: 1px;
+  background: ${(props) => props.theme.COLORS.DEFAULT};
+  margin: 1.5rem 0;
 `
