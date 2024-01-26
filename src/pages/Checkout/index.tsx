@@ -72,23 +72,23 @@ export function Checkout() {
             <div className="qt-pedidos">
               <img src={imgCoffee} alt="" />
               <div className="content-pedidos">
-                <h2 className="item">Expresso Tradicional</h2>
                 <Stepper className="item" />
                 <button className="item" type="submit">
-                  <Trash size={32} /> REMOVER
+                  <Trash /> REMOVER
                 </button>
+                <h2 className="item">Expresso Tradicional</h2>
               </div>
               <p>R$ 9,90</p>
             </div>
 
             <div className="qt-pedidos">
               <img src={imgCoffee} alt="" />
-              <div>
-                <h2>Expresso Tradicional</h2>
-                <Stepper />
-                <button type="submit">
-                  <Trash size={32} /> REMOVER
+              <div className="content-pedidos">
+                <Stepper className="item" />
+                <button className="item" type="submit">
+                  <Trash /> REMOVER
                 </button>
+                <h2 className="item">Expresso Tradicional</h2>
               </div>
               <p>R$ 9,90</p>
             </div>

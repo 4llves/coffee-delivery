@@ -132,20 +132,28 @@ export const CartItens = styled.section`
     align-self: stretch;
 
     .content-pedidos {
-      flex-wrap: wrap;
-
-      max-width: 360px;
-      margin: 0 auto;
       display: flex;
-      border: 1px solid #ccc;
+      max-width: 10rem;
+      flex-wrap: wrap-reverse;
+      gap: 0.5rem;
+      margin-left: 1.25rem;
+
+      :nth-child(1) {
+        height: 2rem;
+      }
+
+      h2 {
+        color: ${(props) => props.theme.COLORS.INPUT};
+        /* Text/Regular M */
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 130%; /* 1.3rem */
+      }
 
       .item {
         /* O flex: 1; é necessário para que cada item se expanda ocupando o tamanho máximo do container. */
         flex: 1;
-        margin: 5px;
-        background: tomato;
-        text-align: center;
-        font-size: 1.5em;
       }
     }
 
@@ -157,16 +165,26 @@ export const CartItens = styled.section`
     button[type='submit'] {
       display: flex;
       height: 2rem;
+      width: 5rem;
       padding: 0rem 0.5rem;
       justify-content: center;
       align-items: center;
       gap: 0.25rem;
       border-radius: 0.375rem;
       background: ${(props) => props.theme.COLORS.BUTTON};
+      border: none;
 
-      svg {
+      color: ${(props) => props.theme.COLORS.CARD};
+      font-family: Roboto;
+      font-size: 0.75rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 160%; /* 1.2rem */
+      text-transform: uppercase;
+
+      :nth-child(1) {
         width: 1rem;
-        height: 1rem;
+        color: ${(props) => props.theme.COLORS.COFFEE_300};
       }
     }
   }
