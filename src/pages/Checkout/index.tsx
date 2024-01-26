@@ -11,6 +11,8 @@ import { Input } from '../../components/Input'
 import { Stepper } from '../../components/Stepper'
 import { CartItens, Container, DataClient } from './styles'
 
+import imgCoffee from '../../assets/cafe-com-leite.png'
+
 export function Checkout() {
   return (
     <div>
@@ -67,24 +69,28 @@ export function Checkout() {
 
         <CartItens>
           <div>
-            <div>
-              <img src="" alt="" />
-              <h2>Expresso Tradicional</h2>
+            <div className="qt-pedidos">
+              <img src={imgCoffee} alt="" />
+              <div className="content-pedidos">
+                <h2 className="item">Expresso Tradicional</h2>
+                <Stepper className="item" />
+                <button className="item" type="submit">
+                  <Trash size={32} /> REMOVER
+                </button>
+              </div>
               <p>R$ 9,90</p>
-              <Stepper />
-              <button>
-                <Trash size={32} /> REMOVER
-              </button>
             </div>
 
-            <div>
-              <img src="" alt="" />
-              <h2>Expresso Tradicional</h2>
+            <div className="qt-pedidos">
+              <img src={imgCoffee} alt="" />
+              <div>
+                <h2>Expresso Tradicional</h2>
+                <Stepper />
+                <button type="submit">
+                  <Trash size={32} /> REMOVER
+                </button>
+              </div>
               <p>R$ 9,90</p>
-              <Stepper />
-              <button>
-                <Trash size={32} /> REMOVER
-              </button>
             </div>
 
             <p>Total de Itens: R$29,70</p>

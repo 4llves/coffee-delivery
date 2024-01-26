@@ -113,5 +113,61 @@ export const DataClient = styled.section`
 `
 
 export const CartItens = styled.section`
-  width: 40rem;
+  display: flex;
+  width: 28rem;
+  height: 31.125rem;
+  padding: 2.5rem;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.5rem;
+  border-radius: 0.375rem 2.75rem;
+  background: ${(props) => props.theme.COLORS.BACKGROUND_HEADER};
+
+  .qt-pedidos {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 0.5rem 0.25rem;
+    align-self: stretch;
+
+    .content-pedidos {
+      flex-wrap: wrap;
+
+      max-width: 360px;
+      margin: 0 auto;
+      display: flex;
+      border: 1px solid #ccc;
+
+      .item {
+        /* O flex: 1; é necessário para que cada item se expanda ocupando o tamanho máximo do container. */
+        flex: 1;
+        margin: 5px;
+        background: tomato;
+        text-align: center;
+        font-size: 1.5em;
+      }
+    }
+
+    img {
+      width: 4rem;
+      height: 4rem;
+    }
+
+    button[type='submit'] {
+      display: flex;
+      height: 2rem;
+      padding: 0rem 0.5rem;
+      justify-content: center;
+      align-items: center;
+      gap: 0.25rem;
+      border-radius: 0.375rem;
+      background: ${(props) => props.theme.COLORS.BUTTON};
+
+      svg {
+        width: 1rem;
+        height: 1rem;
+      }
+    }
+  }
 `

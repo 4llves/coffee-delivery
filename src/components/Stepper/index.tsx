@@ -1,9 +1,13 @@
 import { Minus, Plus } from '@phosphor-icons/react'
 import { StepperButton, StepperContainer } from './styles'
 
-export function Stepper() {
+interface StepperButton {
+  className?: string
+}
+
+export function Stepper({ className }: StepperButton) {
   return (
-    <StepperContainer>
+    <StepperContainer className={className}>
       <StepperButton>
         <Minus weight="bold" />
       </StepperButton>
