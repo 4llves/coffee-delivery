@@ -36,6 +36,7 @@ export const defaultTheme = {
     GREEN_800: '#327555',
     GREEN_200: '#9CC8A0',
     GREEN_100: '#DBEBDA',
+    GREEN_LIGHT: '#06f770',
 
     HOVER: '#F3F2F2',
     DEFAULT: '#FAFAFA',
