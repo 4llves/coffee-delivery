@@ -6,6 +6,10 @@ export const Container = styled.main`
   justify-content: center;
   margin: 4.88rem auto;
   gap: 2rem;
+
+  button {
+    cursor: pointer;
+  }
 `
 
 export const DataClient = styled.section`
@@ -144,7 +148,6 @@ export const CartItens = styled.section`
 
       h2 {
         color: ${(props) => props.theme.COLORS.INPUT};
-        /* Text/Regular M */
         font-size: 1rem;
         font-style: normal;
         font-weight: 400;

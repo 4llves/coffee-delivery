@@ -46,28 +46,30 @@ export const CoffeeCard = styled.div`
     }
   }
 
-  h2 {
-    width: 13.5rem;
-    color: ${(props) => props.theme.COLORS.TEXT};
-    text-align: center;
-    font-family: ${(props) => props.theme.FONT.TITLE};
-    font-size: 1.25rem;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 130%; /* 1.625rem */
-    margin: 1rem auto 0.5rem;
-  }
+  .text-content {
+    h2 {
+      width: 13.5rem;
+      color: ${(props) => props.theme.COLORS.TEXT};
+      text-align: center;
+      font-family: ${(props) => props.theme.FONT.TITLE};
+      font-size: 1.25rem;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 130%; /* 1.625rem */
+      margin: 1rem auto 0.5rem;
+    }
 
-  p {
-    width: 13.5rem;
-    color: ${(props) => props.theme.COLORS.HOVER};
-    text-align: center;
-    font-family: ${(props) => props.theme.FONT.TEXT};
-    font-size: 0.875rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 130%; /* 1.1375rem */
-    margin-inline: auto;
+    p {
+      width: 13.5rem;
+      color: ${(props) => props.theme.COLORS.HOVER};
+      text-align: center;
+      font-family: ${(props) => props.theme.FONT.TEXT};
+      font-size: 0.875rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 130%; /* 1.1375rem */
+      margin-inline: auto;
+    }
   }
 
   .card-footer {
@@ -95,6 +97,8 @@ export const CoffeeCard = styled.div`
       margin-left: 0.5rem;
       border-radius: 6px;
       background: ${(props) => props.theme.COLORS.COFFEE_600};
+
+      cursor: pointer;
     }
   }
 `

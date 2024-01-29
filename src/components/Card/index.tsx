@@ -14,9 +14,11 @@ export function Card() {
         <span data-content="com leite">com leite</span>
       </div>
 
-      <h2>Café com Leite</h2>
+      <div className="text-content">
+        <h2>Café com Leite</h2>
 
-      <p>Meio a meio de expresso tradicional com leite vaporizado</p>
+        <p>Meio a meio de expresso tradicional com leite vaporizado</p>
+      </div>
 
       <div className="card-footer">
         <span>R$ 9,90</span>
