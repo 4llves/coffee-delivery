@@ -15,6 +15,9 @@ export const CoffeeCard = styled.div`
     width: 7.5rem;
     height: 7.5rem;
     margin: -1.25rem auto 1px;
+    background: ${(props) => props.theme.COLORS.CARD};
+    border: 1px solid ${(props) => props.theme.COLORS.COFFEE_100};
+    border-radius: 50%;
   }
 
   .type-coffee {

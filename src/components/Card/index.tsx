@@ -1,7 +1,7 @@
 import { ShoppingCartSimple } from '@phosphor-icons/react'
 import { CoffeeCard } from './styles'
 
-import imgCoffeeMilk from '../../assets/cafe-com-leite.png'
+import imgCoffeeMilk from '../../assets/puddingchocolatesemfundo.png'
 import { Stepper } from '../Stepper'
 
 export function Card() {
@@ -11,11 +11,11 @@ export function Card() {
 
       <div className="type-coffee">
         <span data-content="tradicional">tradicional</span>
-        <span data-content="com leite">com leite</span>
+        <span data-content="chocolate">com leite</span>
       </div>
 
       <div className="text-content">
-        <h2>Café com Leite</h2>
+        <h2>Pudim de Chocolate</h2>
 
         <p>Meio a meio de expresso tradicional com leite vaporizado</p>
       </div>

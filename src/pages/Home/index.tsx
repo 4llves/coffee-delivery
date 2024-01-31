@@ -22,7 +22,7 @@ export function Home() {
           <div>
             <h1>Encontre o Pudim perfeito para qualquer hora do dia</h1>
             <p>
-              Com o Coffee Delivery você recebe seu Pudim onde estiver, a
+              Com o Pudding Delivery você recebe seu Pudim onde estiver, a
               qualquer hora
             </p>
 

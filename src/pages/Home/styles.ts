@@ -9,10 +9,10 @@ export const Wrapper = styled.main`
   justify-content: center;
   margin-inline: auto;
   background: url(${imgBackground}) center/cover no-repeat;
+  gap: 56px;
 
   img {
-    width: 28rem;
-    margin-left: 5rem;
+    width: 29.75rem;
   }
 `
 
@@ -44,7 +44,7 @@ export const ContentWrapper = styled.div`
 
 export const WrapperContentText = styled.div`
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 45% 1fr;
   margin-top: 4.12rem;
   /* gap: 1.25rem; */
 `
