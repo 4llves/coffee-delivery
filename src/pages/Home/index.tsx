@@ -10,7 +10,7 @@ import {
 } from './styles'
 
 import { Coffee, Package, ShoppingCart, Timer } from '@phosphor-icons/react'
-import imgCoffee from '../../assets/wrapper-coffee.png'
+import imgCoffee from '../../assets/pudim2.png'
 import { Card } from '../../components/Card'
 
 export function Home() {
@@ -20,9 +20,9 @@ export function Home() {
       <Wrapper>
         <ContentWrapper>
           <div>
-            <h1>Encontre o café perfeito para qualquer hora do dia</h1>
+            <h1>Encontre o Pudim perfeito para qualquer hora do dia</h1>
             <p>
-              Com o Coffee Delivery você recebe seu café onde estiver, a
+              Com o Coffee Delivery você recebe seu Pudim onde estiver, a
               qualquer hora
             </p>
 
@@ -34,7 +34,7 @@ export function Home() {
 
               <SmallCardsInWrapper variant="gray">
                 <Package size={32} weight="fill" />
-                <p>Embalagem mantém o café intacto</p>
+                <p>Embalagem mantém o Pudim intacto</p>
               </SmallCardsInWrapper>
 
               <SmallCardsInWrapper variant="lowgreen">
@@ -44,7 +44,7 @@ export function Home() {
 
               <SmallCardsInWrapper variant="orange">
                 <Coffee size={32} weight="fill" />
-                <p>O café chega fresquinho até você</p>
+                <p>O Pudim chega fresquinho até você</p>
               </SmallCardsInWrapper>
             </WrapperContentText>
           </div>
@@ -53,7 +53,7 @@ export function Home() {
       </Wrapper>
 
       <SeparatorText>
-        <h1>Nossos Cafés</h1>
+        <h1>Nossos Pudins</h1>
       </SeparatorText>
 
       <ContentCard>

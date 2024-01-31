@@ -11,8 +11,8 @@ export const Wrapper = styled.main`
   background: url(${imgBackground}) center/cover no-repeat;
 
   img {
-    width: 29.75rem;
-    height: 22.5rem;
+    width: 28rem;
+    margin-left: 5rem;
   }
 `
 
