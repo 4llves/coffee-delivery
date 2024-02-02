@@ -1,7 +1,7 @@
 import { ShoppingCartSimple } from '@phosphor-icons/react'
 import { CoffeeCard } from './styles'
 
-// import imgCoffeeMilk from '../../assets/puddingchocolatesemfundo.png'
+import { FormatCurrency } from '../../lib/utils'
 import { Stepper } from '../Stepper'
 
 type CardProps = {
@@ -9,9 +9,10 @@ type CardProps = {
   type: string
   description: string
   img: string
+  value: number
 }
 
-export function Card({ name, type, description, img }: CardProps) {
+export function Card({ name, type, description, value, img }: CardProps) {
   return (
     <CoffeeCard>
       <img src={img} alt="" />
@@ -22,12 +23,11 @@ export function Card({ name, type, description, img }: CardProps) {
 
       <div className="text-content">
         <h2>{name}</h2>
-
         <p>{description}</p>
       </div>
 
       <div className="card-footer">
-        <span>R$ 9,90</span>
+        <span>{FormatCurrency(value)}</span>
 
         <Stepper />
 

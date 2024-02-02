@@ -65,6 +65,7 @@ export function Home() {
             img={pudim.image}
             name={pudim.name}
             type={pudim.type}
+            value={pudim.value}
             description={pudim.description}
           />
         ))}

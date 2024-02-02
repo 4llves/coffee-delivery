@@ -1,7 +1,13 @@
 {
   "pudins": [
-    { "id": 1, "name": "Chocolate", "type": "tradiconal", "description": "Meio Amargo com Chocolate Caramelizado", "image": "./assets/pudim2.png" },
-    { "id": 2, "name": "Caramelo", "type": "tradiconal", "description": "Meio Amargo com Chocolate Caramelizado", "image": "./assets/puddingchocolatesemfundo.png"},
-    { "id": 3, "name": "Leite", "type": "especial", "description": "Meio Amargo com Chocolate Caramelizado", "image": "./assets/pudim2.png"}
+    { "id": 1, "name": "Chocolate", "type": "tradiconal", "description": "Meio Amargo com Chocolate Caramelizado", "value": 2990, "image": "puddingchocolatesemfundo.png" },
+    { "id": 2, "name": "Caramelo", "type": "tradiconal", "description": "Meio Amargo com Chocolate Caramelizado", "value": 2990, "image": "pudimcaralemo.png"},
+    { "id": 3, "name": "Leite", "type": "especial", "description": "Meio Amargo com Chocolate Caramelizado", "value": 2990, "image": "pudimleite.png"},
+    { "id": 4, "name": "Chocolate", "type": "tradiconal", "description": "Meio Amargo com Chocolate Caramelizado", "value": 2990, "image": "puddingchocolatesemfundo.png" },
+    { "id": 5, "name": "Caramelo", "type": "tradiconal", "description": "Meio Amargo com Chocolate Caramelizado", "value": 2990, "image": "pudimcaralemo.png"},
+    { "id": 6, "name": "Leite", "type": "especial", "description": "Meio Amargo com Chocolate Caramelizado", "value": 2990, "image": "pudimleite.png"},
+    { "id": 7, "name": "Chocolate", "type": "tradiconal", "description": "Meio Amargo com Chocolate Caramelizado", "value": 2990, "image": "puddingchocolatesemfundo.png" },
+    { "id": 8, "name": "Caramelo", "type": "tradiconal", "description": "Meio Amargo com Chocolate Caramelizado", "value": 2990, "image": "pudimcaralemo.png"},
+    { "id": 9, "name": "Leite", "type": "especial", "description": "Meio Amargo com Chocolate Caramelizado", "value": 2990, "image": "pudimleite.png"}
   ]
 }
