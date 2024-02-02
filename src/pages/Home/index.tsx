@@ -13,6 +13,8 @@ import { Coffee, Package, ShoppingCart, Timer } from '@phosphor-icons/react'
 import imgCoffee from '../../assets/pudim2.png'
 import { Card } from '../../components/Card'
 
+import data from '../../data.json'
+
 export function Home() {
   return (
     <div>
@@ -57,15 +59,15 @@ export function Home() {
       </SeparatorText>
 
       <ContentCard>
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
+        {data.pudins.map((pudim) => (
+          <Card
+            key={pudim.id}
+            img={pudim.image}
+            name={pudim.name}
+            type={pudim.type}
+            description={pudim.description}
+          />
+        ))}
       </ContentCard>
 
       <Footer>

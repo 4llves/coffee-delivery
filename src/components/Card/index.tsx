@@ -1,23 +1,29 @@
 import { ShoppingCartSimple } from '@phosphor-icons/react'
 import { CoffeeCard } from './styles'
 
-import imgCoffeeMilk from '../../assets/puddingchocolatesemfundo.png'
+// import imgCoffeeMilk from '../../assets/puddingchocolatesemfundo.png'
 import { Stepper } from '../Stepper'
 
-export function Card() {
+type CardProps = {
+  name: string
+  type: string
+  description: string
+  img: string
+}
+
+export function Card({ name, type, description, img }: CardProps) {
   return (
     <CoffeeCard>
-      <img src={imgCoffeeMilk} alt="" />
+      <img src={img} alt="" />
 
       <div className="type-coffee">
-        <span data-content="tradicional">tradicional</span>
-        <span data-content="chocolate">com leite</span>
+        <span data-content={type}>{type}</span>
       </div>
 
       <div className="text-content">
-        <h2>Pudim de Chocolate</h2>
+        <h2>{name}</h2>
 
-        <p>Meio a meio de expresso tradicional com leite vaporizado</p>
+        <p>{description}</p>
       </div>
 
       <div className="card-footer">

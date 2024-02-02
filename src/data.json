@@ -1,0 +1,7 @@
+{
+  "pudins": [
+    { "id": 1, "name": "Chocolate", "type": "tradiconal", "description": "Meio Amargo com Chocolate Caramelizado", "image": "./assets/pudim2.png" },
+    { "id": 2, "name": "Caramelo", "type": "tradiconal", "description": "Meio Amargo com Chocolate Caramelizado", "image": "./assets/puddingchocolatesemfundo.png"},
+    { "id": 3, "name": "Leite", "type": "especial", "description": "Meio Amargo com Chocolate Caramelizado", "image": "./assets/pudim2.png"}
+  ]
+}
